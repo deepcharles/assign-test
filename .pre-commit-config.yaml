@@ -1,5 +1,10 @@
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v3.3.0
+  hooks:
+    - id: no-commit-to-branch
+      args: ['--branch', 'main']
+- repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v3.4.0
   hooks:
     - id: trailing-whitespace  # This hook trims trailing whitespace.
